@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST377 - Doggos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/simple-slider.css">
+</head>
+<body>
+    <header>
+        <h1>INST377 - Activities</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dogs-intro">
+            <h2>Doggos!</h2>
+            <div class="dog-carousel" id="dogCarousel">
+            </div>
+        </section>
+
+        <section class="dog-breeds">
+            <h3>Dog Breeds</h3>
+            <div class="breed-buttons" id="breedButtons">
+            </div>
+            <div class="breed-info" id="breedInfo">
+            </div>
+        </section>
+    </main>
+
+    <div class="audio-instructions">
+        <h3>In this web page there are options to Navigate using Audio!</h3>
+        <p>Ensure your Mic is enabled to be able to use this feature.</p>
+        <ul>
+            <li><strong>Navigate to a Different Page</strong>
+                <ul>
+                    <li>Say "Navigate to &lt;page&gt;"</li>
+                </ul>
+            </li>
+            <li><strong>Change Your Page Color</strong>
+                <ul>
+                    <li>Say "Change the color to &lt;color&gt;"</li>
+                </ul>
+            </li>
+            <li><strong>Load Dog Breed</strong>
+                <ul>
+                    <li>Say "Load Dog Breed &lt;Dog Breed Name&gt;"</li>
+                </ul>
+            </li>
+            <li><strong>Say Hello</strong>
+                <ul>
+                    <li>Say "Hello"</li> 
+                </ul>
+            </li>
+        </ul>
+        <div class="audio-container">
+            <h3 class="audio-title">Voice Commands</h3>
+            <div class="audio-instructions">
+              <p>You can use the following voice commands on this website:</p>
+              <ul>
+                <li>"Hello" - Will display a Hello World alert</li>
+                <li>"Change the color to [color]" - Changes the background color</li>
+                <li>"Navigate to [page]" - Navigate to Home, Stocks, or Dogs page</li>
+                <li>"Lookup [stock]" - Looks up stock data for the specified ticker</li>
+              </ul>
+            </div>
+        <div class="audio-buttons">
+            <button id="turn-on-audio" class="audio-button">Turn On Audio</button>
+            <button id="turn-off-audio" class="audio-button">Turn Off Audio</button>
+          </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/simple-slider.min.js"></script>
+  
+    <script src="main.js"></script>
+    <script src="dogs.js"></script>
+
+  </body>
+  </html>
+</body>
+</html>
