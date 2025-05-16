@@ -1,0 +1,78 @@
+<head>
+  <title>Stocks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Let's chart some stocks!</h1>
+    </header>
+
+    <div class="stock-form">
+      <div class="form-group">
+        <label for="ticker">Stock Ticker:</label>
+        <input type="text" id="ticker" placeholder="stock">
+      </div>
+      <div class="form-group">
+        <label for="time-range">Time:</label>
+        <select id="time-range">
+          <option value="30">30 Days</option>
+          <option value="60">60 Days</option>
+          <option value="90">90 Days</option>
+        </select>
+      </div>
+      <button id="lookup-stock" class="custom-button">Lookup!</button>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="stock-chart"></canvas>
+    </div>
+  
+    <div class="top-stocks">
+      <h2>Top 5 Reddit Stocks</h2>
+      <table id="reddit-stocks">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Comment Count</th>
+            <th>Sentiment</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  <div class="audio-container">
+    <h3 class="audio-title">Voice Commands</h3>
+    <div class="audio-instructions">
+      <p>You can use the following voice commands on this website:</p>
+      <ul>
+        <li>"Hello" - Will display a Hello World alert</li>
+        <li>"Change the color to [color]" - Changes the background color</li>
+        <li>"Navigate to [page]" - Navigate to Home, Stocks, or Dogs page</li>
+      </ul>
+    </div>
+    <div class="audio-buttons">
+      <button id="turn-on-audio" class="audio-button">Turn On Audio</button>
+      <button id="turn-off-audio" class="audio-button">Turn Off Audio</button>
+    </div>
+  </div>
+
+
+
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+  <script src="stocks.js"></script>
+</body>
+</html>
